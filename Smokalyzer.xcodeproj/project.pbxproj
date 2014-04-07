@@ -23,6 +23,12 @@
 		49DFC10D163F72FF00251742 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49DFC108163F72FF00251742 /* CADebugMacros.cpp */; };
 		49DFC115163F7BF500251742 /* HiJackMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49DFC114163F7BF500251742 /* HiJackMgr.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		49DFC117163F7D5100251742 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DFC116163F7D5100251742 /* AudioToolbox.framework */; };
+		8F192A6318F2AD3E00CBABCA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F192A6218F2AD3E00CBABCA /* CoreData.framework */; };
+		8F192A6618F2AD6300CBABCA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F192A6418F2AD6300CBABCA /* Model.xcdatamodeld */; };
+		8F192A6A18F2AF2900CBABCA /* SampleDetals.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F192A6918F2AF2900CBABCA /* SampleDetals.m */; };
+		8F192A6D18F2AF2A00CBABCA /* SamplesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F192A6C18F2AF2A00CBABCA /* SamplesItem.m */; };
+		8F192A7018F2B11400CBABCA /* SamplesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F192A6F18F2B11400CBABCA /* SamplesList.m */; };
+		8F192A7318F2B12900CBABCA /* SampleDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F192A7218F2B12900CBABCA /* SampleDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,16 @@
 		49DFC10B163F72FF00251742 /* CAXException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = CAXException.h; path = Smokalyzer/CAXException.h; sourceTree = "<group>"; };
 		49DFC114163F7BF500251742 /* HiJackMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HiJackMgr.mm; path = Smokalyzer/HiJackMgr.mm; sourceTree = "<group>"; };
 		49DFC116163F7D5100251742 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8F192A6218F2AD3E00CBABCA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8F192A6518F2AD6300CBABCA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8F192A6818F2AF2900CBABCA /* SampleDetals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleDetals.h; sourceTree = "<group>"; };
+		8F192A6918F2AF2900CBABCA /* SampleDetals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleDetals.m; sourceTree = "<group>"; };
+		8F192A6B18F2AF2A00CBABCA /* SamplesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesItem.h; sourceTree = "<group>"; };
+		8F192A6C18F2AF2A00CBABCA /* SamplesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesItem.m; sourceTree = "<group>"; };
+		8F192A6E18F2B11400CBABCA /* SamplesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesList.h; sourceTree = "<group>"; };
+		8F192A6F18F2B11400CBABCA /* SamplesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesList.m; sourceTree = "<group>"; };
+		8F192A7118F2B12900CBABCA /* SampleDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleDetails.h; sourceTree = "<group>"; };
+		8F192A7218F2B12900CBABCA /* SampleDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F192A6318F2AD3E00CBABCA /* CoreData.framework in Frameworks */,
 				49DFC117163F7D5100251742 /* AudioToolbox.framework in Frameworks */,
 				49DFC0D6163F6CD700251742 /* UIKit.framework in Frameworks */,
 				49DFC0D8163F6CD700251742 /* Foundation.framework in Frameworks */,
@@ -72,6 +89,7 @@
 		49DFC0C6163F6CD700251742 = {
 			isa = PBXGroup;
 			children = (
+				8F192A6718F2AD6900CBABCA /* coreData */,
 				49DFC116163F7D5100251742 /* AudioToolbox.framework */,
 				49DFC10E163F73BB00251742 /* HiJackLib */,
 				49DFC0DB163F6CD700251742 /* Smokalyzer */,
@@ -91,6 +109,7 @@
 		49DFC0D4163F6CD700251742 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F192A6218F2AD3E00CBABCA /* CoreData.framework */,
 				49DFC0D5163F6CD700251742 /* UIKit.framework */,
 				49DFC0D7163F6CD700251742 /* Foundation.framework */,
 				49DFC0D9163F6CD700251742 /* CoreGraphics.framework */,
@@ -102,6 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				49DFC0ED163F6CD700251742 /* MainStoryboard_iPhone.storyboard */,
+				8F192A6E18F2B11400CBABCA /* SamplesList.h */,
+				8F192A6F18F2B11400CBABCA /* SamplesList.m */,
+				8F192A7118F2B12900CBABCA /* SampleDetails.h */,
+				8F192A7218F2B12900CBABCA /* SampleDetails.m */,
 				49DFC0F0163F6CD700251742 /* MainStoryboard_iPad.storyboard */,
 				49DFC0F3163F6CD700251742 /* ViewController.h */,
 				49DFC0F4163F6CD700251742 /* ViewController.mm */,
@@ -139,6 +162,18 @@
 				49DFC0E5163F6CD700251742 /* AppDelegate.mm */,
 			);
 			name = HiJackLib;
+			sourceTree = "<group>";
+		};
+		8F192A6718F2AD6900CBABCA /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				8F192A6418F2AD6300CBABCA /* Model.xcdatamodeld */,
+				8F192A6B18F2AF2A00CBABCA /* SamplesItem.h */,
+				8F192A6C18F2AF2A00CBABCA /* SamplesItem.m */,
+				8F192A6818F2AF2900CBABCA /* SampleDetals.h */,
+				8F192A6918F2AF2900CBABCA /* SampleDetals.m */,
+			);
+			name = coreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,10 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F192A6A18F2AF2900CBABCA /* SampleDetals.m in Sources */,
 				49DFC0E2163F6CD700251742 /* main.m in Sources */,
+				8F192A6D18F2AF2A00CBABCA /* SamplesItem.m in Sources */,
 				49DFC0E6163F6CD700251742 /* AppDelegate.mm in Sources */,
 				49DFC0F5163F6CD700251742 /* ViewController.mm in Sources */,
+				8F192A7318F2B12900CBABCA /* SampleDetails.m in Sources */,
+				8F192A6618F2AD6300CBABCA /* Model.xcdatamodeld in Sources */,
 				49DFC10C163F72FF00251742 /* aurio_helper.cpp in Sources */,
+				8F192A7018F2B11400CBABCA /* SamplesList.m in Sources */,
 				49DFC10D163F72FF00251742 /* CADebugMacros.cpp in Sources */,
 				49DFC115163F7BF500251742 /* HiJackMgr.mm in Sources */,
 			);
@@ -362,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8F192A6418F2AD6300CBABCA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F192A6518F2AD6300CBABCA /* Model.xcdatamodel */,
+			);
+			currentVersion = 8F192A6518F2AD6300CBABCA /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 49DFC0C8163F6CD700251742 /* Project object */;
 }
