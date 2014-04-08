@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h> //Import so we can work with Core Data
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-
+    NSManagedObjectModel *sharedModel; //holder for our model
+    NSManagedObjectContext *sharedContext; //holder for our context
 }
 
 @property (strong, nonatomic) UIWindow *window;
+- (NSManagedObjectModel *)sharedModel; //Getter for our instance variable
+- (NSManagedObjectContext *)sharedContext; //Getter for our instance variable
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
 @end

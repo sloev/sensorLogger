@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface SamplesList : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface SamplesList : UITableViewController {
+    NSMutableArray *samples; //Container for our newly created CDItems
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+}
 
-- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
+
 
 
 @end

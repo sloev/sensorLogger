@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HiJackMgr.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
 
 
 @interface ViewController : UIViewController <HiJackDelegate> {
@@ -15,4 +17,7 @@
     
 }
 
+- (IBAction)saveData:(id)sender;
+
 @end
+
