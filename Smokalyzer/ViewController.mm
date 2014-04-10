@@ -52,7 +52,7 @@
 
 - (IBAction)knap:(UIButton *)sender {
     while(1){
-    [hiJackMgr send:65];
+    [hiJackMgr send:165];    
     }
 }
 @end

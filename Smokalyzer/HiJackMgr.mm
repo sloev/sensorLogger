@@ -19,7 +19,7 @@
 // baud rate. best to take a divisible number for 44.1kS/s
 #define HIGHFREQ 1378.125 
 #define LOWFREQ (HIGHFREQ / 2)
-
+//#define LOWFREQ 0
 // (44100 / HIGHFREQ)  // how many samples per UART bit
 #define SAMPLESPERBIT 32 
 
