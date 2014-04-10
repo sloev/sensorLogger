@@ -16,8 +16,8 @@
     HiJackMgr * hiJackMgr;
     
 }
+- (IBAction)knap:(UIButton *)sender;
 
-- (IBAction)saveData:(id)sender;
 
 @end
 

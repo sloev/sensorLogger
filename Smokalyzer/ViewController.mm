@@ -50,4 +50,9 @@
 
 
 
+- (IBAction)knap:(UIButton *)sender {
+    while(1){
+    [hiJackMgr send:65];
+    }
+}
 @end
