@@ -46,13 +46,7 @@
     [super viewDidUnload];
 }
 
-
-
-
-
 - (IBAction)knap:(UIButton *)sender {
-    while(1){
-    [hiJackMgr send:165];    
-    }
+    [hiJackMgr send:165];
 }
 @end
